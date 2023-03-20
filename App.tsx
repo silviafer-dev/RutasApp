@@ -1,13 +1,13 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { NavigationContainer } from '@react-navigation/native';
+import { Navigator } from './src/navigator/navigator';
 
 const App = () => {
   return (
-    <View>
-      <Text> Hola Mundo!</Text>
-      <Icon name="star-outline" size={30} color="red" />
-    </View>
+    <NavigationContainer>
+      <Navigator />
+    </NavigationContainer>
   );
 };
 
